@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen font-Roboto bg-weather-primary">
     <SiteNavigation />
     <RouterView v-slot="{ Component }">
-      <Transition name="page" mode="out-in"><component :is="Component" /></Transition
+      <Transition name="page" mode="out-in"><component class="mb-12" :is="Component" /></Transition
     ></RouterView>
     <Footer />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <main class="container text-white">
+  <main class="container text-white py-5">
     <div class="pt-4 mb-8 relative">
       <input
         type="text"

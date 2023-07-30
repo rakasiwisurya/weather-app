@@ -28,6 +28,18 @@
         </template>
       </ul>
     </div>
+
+    <div class="flex flex-col gap-4">
+      <Suspense>
+        <CityList />
+
+        <template #fallback>
+          <div class="flex items-center justify-center h-screen">
+            <Spinner />
+          </div>
+        </template>
+      </Suspense>
+    </div>
   </main>
 </template>
 
@@ -35,6 +47,8 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
+import CityList from "@/components/CityList.vue";
+import Spinner from "@/components/Spinner.vue";
 
 const router = useRouter();
 

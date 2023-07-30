@@ -34,9 +34,10 @@
         <CityList />
 
         <template #fallback>
-          <div class="flex items-center justify-center h-screen">
+          <!-- <div class="flex items-center justify-center h-screen">
             <Spinner />
-          </div>
+          </div> -->
+          <CityCardSkeleton />
         </template>
       </Suspense>
     </div>
@@ -48,7 +49,8 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 import CityList from "@/components/CityList.vue";
-import Spinner from "@/components/Spinner.vue";
+import CityCardSkeleton from "@/components/CityCardSkeleton.vue";
+// import Spinner from "@/components/Spinner.vue";
 
 const router = useRouter();
 

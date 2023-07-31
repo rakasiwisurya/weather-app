@@ -4,7 +4,6 @@
     <RouterView v-slot="{ Component }">
       <Transition name="page" mode="out-in"><component class="mb-12" :is="Component" /></Transition
     ></RouterView>
-    <Footer />
   </div>
 </template>
 
